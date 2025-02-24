@@ -1,30 +1,24 @@
--- Construct an email or slack message that is understandable to a product or business leader who is not familiar with your day-to-day work. 
--- Summarize the results of your investigation. Include:
-Key data quality issues and outstanding questions about the data
-One interesting trend in the data
-Use a finding from part 2 or come up with a new insight
-Request for action: explain what additional help, info, etc. you need to make sense of the data and resolve any outstanding issues
-
-
 Hi, 
+
 I’ve been diving into our recent product, transaction, and user data, and I wanted to share some key findings and a few open questions that need your input. 
 Here’s a quick summary:
 
-Key Data Quality Issues
+**Key Data Quality Issues**
 
-Missing or Incomplete Data:
 - Missing Manufacturer/Brand Info: Many products have placeholder values like “PLACEHOLDER MANUFACTURER” or “NONE,” which makes it tricky to analyze manufacturer-specific trends.
 - Missing Barcodes: Some transactions don’t have barcodes, so we can’t link those purchases to specific products.
 - “zero” in FINAL_QUANTITY: The word “zero” appears instead of a numeric value in some transactions. Is this indicating returns, out-of-stock items, or something else?
 - Missing Barcodes with FINAL_SALE: Some transactions have a sale value but no barcode, so it’s unclear what product was purchased.
 
-Insight from Analysis
+**Insight from Analysis**
+
 - Millennials contribute the highest percentage of sales in the Health & Wellness category, followed closely by Gen Z. What’s really interesting is that users aged 21 and over are much more likely to buy Health & Wellness products than Snacks. 
 This makes sense, as we’re seeing a bigger focus on health and self-care these days, especially among younger folks. 
 Brands like COLGATE (for Oral Care) and EMERGEN-C (for Vitamins & Supplements) are standing out as some of the top favorites in this space.
 
 
-Request for Action:
+**Request for Action**
+
 To further refine the analysis and resolve outstanding issues, I would need help with the following:
 
 - Clarify “zero” Quantity Transactions: Are these returns, errors, or something else? My suggestion is to replace them with a numeric value (e.g., 0) for consistency.
